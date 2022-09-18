@@ -1,6 +1,3 @@
-# arquitetura-css
-curso de arquitetura da Alura. 
-
 <h1 align="center">Arquitetura CSS</h1>
 
 <p align="center">
@@ -36,7 +33,9 @@ HTML e CSS renovados para melhor responsividade, criado também a função extra
 
 ## Deploy da Aplicação :dash:
 
-> 
+> https://github.com/felipe-diniz/arquitetura-css
+
+> https://felipe-diniz.github.io/arquitetura-css/
 
 ## Desenvolvedor :octocat:
 
