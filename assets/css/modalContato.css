@@ -1,0 +1,122 @@
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 1.5em;
+}
+
+.topico-email {
+    grid-column: span 3;
+}
+
+.topico-senha {
+    grid-column: span 3;
+}
+
+.topico-endereco {
+    grid-column: span 6;
+}
+
+.topico-complemento {
+    grid-column: span 6;
+}
+
+.topico-cidade {
+    grid-column: span 3;
+}
+
+.topico-estado {
+    grid-column: span 2;
+}
+
+.topico-cep {
+    grid-column: 6;
+}
+
+.topico-receberatt {
+    grid-column: span 2;
+}
+
+.topico-enviar {
+    grid-column: 1;
+}
+
+.formulario__input {
+    width: 100%;
+    margin: 0.5em 0;
+}
+
+.formulario__topico {
+    margin: 0.5em;
+}
+
+.formulario__botao {
+    border: none;
+    color: var(--branco);
+    background-color: rgb(18, 129, 233);
+    padding: 0.5em;
+    width: 70%;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .formulario {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0.5em;
+    }    
+
+    .topico-email {
+        grid-column: span 2;
+    }
+    
+    .topico-senha {
+        grid-column: span 2;
+    }
+    
+    .topico-endereco {
+        grid-column: span 2;
+    }
+    
+    .topico-complemento {
+        grid-column: span 2;
+    }
+    
+    .topico-cidade {
+        grid-column: span 2;
+    }
+    
+    .topico-estado {
+        grid-column: 1;
+    }
+    
+    .topico-cep {
+        grid-column: 2;
+    }
+    
+    .topico-receberatt {
+        grid-column: span 2;
+    }
+    
+    .topico-enviar {
+        grid-column: span 2;
+    }
+    
+    .formulario__input {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+    
+    .formulario__topico {
+        margin: 0.5em;
+    }
+    
+    .formulario__botao {
+        border: none;
+        color: var(--branco);
+        background-color: rgb(18, 129, 233);
+        padding: 0.5em;
+        width: 100%;
+        border-radius: 5px;
+    }
+}

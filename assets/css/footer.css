@@ -1,0 +1,30 @@
+.rodape {
+    background: var(--cinza);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+.rodape__botao {
+    border: none;
+    background: var(--vermelho);
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 32px;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    transition: all .15s ease-in-out;
+}
+
+.rodape__botao:hover {
+    background: var(--vermelho-escuro);
+    cursor: pointer;
+}
+
+.rodape__quadrado {
+    background-color: var(--vermelho);
+    height: 57px;
+    margin: 0.5rem;
+    width: 57px;
+}

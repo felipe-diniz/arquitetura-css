@@ -1,0 +1,27 @@
+@import url(header.css);
+@import url(banner.css);
+@import url(sobre.css);
+@import url(cards.css);
+@import url(quemSomos.css);
+@import url(footer.css);
+@import url(modal.css);
+@import url(modalContato.css);
+
+:root {
+    --cor-de-fundo: #E5E5E5;
+    --fonte-principal: Roboto;
+    --fonte-secundaria: Pacifico;
+    --branco: #FFFFFF;
+    --cinza-escuro: #8C8888;
+    --vermelho: #8D0606;
+    --vermelho-escuro: #620404;
+    --cinza: #C4C4C4;
+    --preto: #000000;
+}
+
+body {
+    background: var(--cor-de-fundo);
+    font-family: var(--fonte-principal), sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}

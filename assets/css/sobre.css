@@ -1,0 +1,32 @@
+.sobre {
+    background: var(--branco);
+    padding: 5em;
+    text-align: center;
+}
+
+.sobre__titulo {
+    color: var(--vermelho);
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 3.1875rem;
+}
+
+.sobre__descricao {
+    color: var(--cinza-escuro);
+    font-weight: 300;
+    font-size: 1.75rem;
+}
+
+@media screen and (max-width:768px) {
+    .sobre {
+        padding: 2.5rem 1rem;
+    }
+
+    .sobre__titulo {
+        font-size: 2rem;
+    }
+
+    .sobre__descricao {
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,90 @@
+.modal {
+    background: rgba(0, 0, 0, .8);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 9999;
+}
+
+.modal__div {
+    position: relative;
+    height: 480px;
+    width: 690px;
+    background-color: var(--branco);
+    padding: 2em;
+    border-radius: 10px;
+    transition: all .15s ease-in-out;
+    margin: auto;
+    margin-top: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animamodal;
+    -webkit-animation-duration: 0.3s;
+    animation-name: animamodal;
+    animation-duration: 0.3s
+}
+
+/* Adiciona animação para o modal */
+@-webkit-keyframes animamodal {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animamodal {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/*************************************/
+
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.modal__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.modal__botao--fecha {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--cinza-escuro);
+    cursor: pointer;
+}
+
+.modal__hr {
+    border: 1px solid var(--cinza);
+}
+
+@media screen and (max-width: 768px) {
+    .modal__div {
+        width: auto;
+        height: 80vh;
+        padding: 1em;
+        margin: auto 2em;
+        margin-top: 10%;
+    }
+}

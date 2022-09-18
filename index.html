@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fruta & Fruto</title>
+    <link href="assets/css/normalize.css" rel="stylesheet" />
+    <link href="assets/css/reset.css" rel="stylesheet" />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="assets/img/logo.jpg" alt="Fruta e Fruto" class="cabecalho__logo">
+        <nav class="cabecalho__menu">
+            <li class="cabecalho__menu--item"><a href="" class="cabecalho__menu--link ativo">início</a></li>
+            <li class="cabecalho__menu--item"><a href="" class="cabecalho__menu--link">receitas</a></li>
+            <li class="cabecalho__menu--item"><a href="" class="cabecalho__menu--link">quem somos</a></li>
+            <li class="cabecalho__menu--item"><a href="" class="cabecalho__menu--link">comunidade</a></li>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner__imagem"></div>
+            <h2 class="banner__titulo">Reaproveite melhor os alimentos!</h2>
+        </section>
+        <section class="sobre">
+            <h2 class="sobre__titulo">Receitas para economizar e ganhar saúde</h2>
+            <p class="sobre__descricao">Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar, ganhar
+                tempo e praticidade</p>
+        </section>
+        <section class="cards">
+            <div class="card">
+                <img src="assets/img/receitas/tigela-de-abacate.jpg" alt="Tigela de abacate" class="card__imagem">
+                <h3 class="card__titulo">Tigela de abacate</h3>
+                <p class="card__descricao">Receita refrescante e cheia de vitaminas para seu café da manhã.</p>
+                <button class="card__botao">Ver receita</button>
+            </div>
+            <div class="card">
+                <img src="assets/img/receitas/salada-de-kiwi.jpg" alt="Salada de kiwi" class="card__imagem">
+                <h3 class="card__titulo">Salada de kiwi</h3>
+                <p class="card__descricao">Receita refrescante e cheia de vitaminas para seu café da manhã.</p>
+                <button class="card__botao">Ver receita</button>
+            </div>
+            <div class="card">
+                <img src="assets/img/receitas/mix-de-vegetais.jpg" alt="Mix de vegetais" class="card__imagem">
+                <h3 class="card__titulo">Mix de vegetais</h3>
+                <p class="card__descricao">Receita refrescante e cheia de vitaminas para seu café da manhã.</p>
+                <button class="card__botao">Ver receita</button>
+            </div>
+            <div class="card">
+                <img src="assets/img/receitas/pimentoes-a-juliana.jpg" alt="Vasilha com pimentões fatiados"
+                    class="card__imagem">
+                <h3 class="card__titulo">Pimentões à Juliana</h3>
+                <p class="card__descricao">Receita refrescante e cheia de vitaminas para seu café da manhã.</p>
+                <button class="card__botao">Ver receita</button>
+            </div>
+            <div class="card">
+                <img src="assets/img/receitas/prato-oriental.jpg" alt="Prato oriental" class="card__imagem">
+                <h3 class="card__titulo">Prato oriental</h3>
+                <p class="card__descricao">Receita refrescante e cheia de vitaminas para seu café da manhã.</p>
+                <button class="card__botao">Ver receita</button>
+            </div>
+            <div class="card">
+                <img src="assets/img/receitas/beterrabas-assadas.jpg" alt="Beterrabas assadas" class="card__imagem">
+                <h3 class="card__titulo">Beterrabas assadas</h3>
+                <p class="card__descricao">Receita refrescante e cheia de vitaminas para seu café da manhã.</p>
+                <button class="card__botao">Ver receita</button>
+            </div>
+        </section>
+        <section class="modal" id="div__modal--receita" data-modal tabindex="-1">
+            <div class="modal__div">
+                <div class="modal__header">
+                    <h2 class="modal__titulo">Modal receita</h2>
+                    <button class="modal__botao--fecha fecha__modal">X</button>
+                </div>
+                <hr class="modal__hr">
+                <p class="modal__receitas--desc">Texto receita</p>
+            </div>
+        </section>
+        <section class="quem-somos">
+            <h2 class="quem-somos__titulo">Quem somos</h2>
+            <p class="quem-somos__descricao">Conheça a comunidade por trás da iniciativa</p>
+            <div class="equipe">
+                <div class="pessoa">
+                    <div class="pessoa__imagem pessoa__imagem--roberta"></div>
+                    <h3 class="pessoa__nome">Roberta</h3>
+                    <p class="pessoa__sobre">conteúdo</p>
+                </div>
+                <div class="pessoa">
+                    <div class="pessoa__imagem pessoa__imagem--marcela"></div>
+                    <h3 class="pessoa__nome">Marcela</h3>
+                    <p class="pessoa__sobre">chef de cozinha</p>
+                </div>
+                <div class="pessoa">
+                    <div class="pessoa__imagem pessoa__imagem--andreia"></div>
+                    <h3 class="pessoa__nome">Andréia</h3>
+                    <p class="pessoa__sobre">pequena produtora</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="modal" id="div__modal--contato">
+            <div class="modal__div">
+                <div class="modal__header">
+                    <h2 class="modal__titulo">Formulário de contato</h2>
+                    <button class="modal__botao--fecha fecha__modal">X</button>
+                </div>
+                <hr class="modal__hr">
+                <form action="" class="formulario" id="contato">
+                    <div class="formulario__topico topico-email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="formulario__input">
+                    </div>
+                    <div class="formulario__topico topico-senha">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" class="formulario__input">
+                    </div>
+                    <div class="formulario__topico topico-endereco">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" id="endereco" class="formulario__input">
+                    </div>
+                    <div class="formulario__topico topico-complemento">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" id="complemento" class="formulario__input">
+                    </div>
+                    <div class="formulario__topico topico-cidade">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" class="formulario__input">
+                    </div>
+                    <div class="formulario__topico topico-estado">
+                        <label for="estado">Estado</label>
+                        <input type="text" id="estado" class="formulario__input">
+                    </div>
+                    <div class="formulario__topico topico-cep">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" class="formulario__input">
+                    </div>
+                    <div class="formulario__topico topico-receberatt">
+                        <input type="checkbox" id="receberatt">
+                        <label for="receberatt">Receber novas receitas</label>
+                    </div>
+                    <input type="submit" form="contato" class="formulario__topico formulario__botao topico-enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="rodape">
+            <div class="rodape__quadrado"></span><span class="rodape__quadrado"></div>
+            <div class="rodape__quadrado"></span><span class="rodape__quadrado"></div>
+            <button class="rodape__botao">contato</button>
+        </section>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

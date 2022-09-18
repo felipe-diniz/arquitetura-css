@@ -1,0 +1,48 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 70vw;
+}
+
+.card {
+    background: var(--branco);
+    border-radius: 2px;
+    border: 1px solid #C4C4C4;
+    color: var(--preto);
+    display: grid;
+    height: 384px;
+    margin: 3em 4em;
+    width: 286px;
+}
+
+.card__titulo {
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0 1rem;
+}
+
+.card__descricao {
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0 1rem;
+}
+
+.card__botao {
+    background: var(--vermelho);
+    border-radius: 5px;
+    border: none;
+    color: var(--branco);
+    font-size: 18px;
+    margin: 0 0 1rem 1rem;
+    padding: 0.25em 0;
+    text-decoration: none;
+    transition: all .15s ease-in-out;
+    width: 40%;
+}
+
+.card__botao:hover {
+    background: var(--vermelho-escuro);
+    cursor: pointer;
+}

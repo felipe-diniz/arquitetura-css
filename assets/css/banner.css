@@ -1,0 +1,29 @@
+.banner {
+    position: relative;
+}
+
+.banner__imagem {
+    background: url('../img/banner.jpg') no-repeat center / cover;
+    height: calc(100vh - 72px);
+    width: 100%;
+}
+
+.banner__titulo {
+    color: var(--branco);
+    font-family: var(--fonte-secundaria), cursive;
+    font-size: 81px;
+    font-weight: 400;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .banner__titulo {
+        font-size: 60px;
+    }
+}
